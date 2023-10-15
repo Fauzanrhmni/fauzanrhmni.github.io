@@ -151,3 +151,17 @@ span.copy:active {
 .color-4:hover span.copy {
   bottom: 0;
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
