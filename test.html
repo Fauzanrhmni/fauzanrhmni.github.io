@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.svg" />
+    <title>CStore</title>
+
+    <!-- My Style CSS -->
+    <link rel="stylesheet" href="css/test.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Nabvar Start -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="img/icon-circle.svg" class="logo" />
+        <span class="title">Cstore</span>
+      </div>
+
+      <div class="cuy">
+        <div class="location">
+          <img src="img/icon/map-pin.svg" />
+          <span class="tasik">Tasikmalaya</span>
+          <img src="img/icon/chevron-down.svg" />
+        </div>
+        <input type="search" id="search-box" placeholder="Search..." />
+        <div class="search">
+          <img src="img/icon/search.svg" />
+          <span class="search-text">Search</span>
+        </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search" class="search"></i></a>
+        <a href="#" id="cart"
+          ><i data-feather="shopping-cart" class="cart"></i
+        ></a>
+        <div class="numb">0</div>
+        <a href="#" id="user"><i data-feather="user" class="user-icon"></i></a>
+      </div>
+    </nav>
+    <!-- Nabvar End -->
+
+    <!-- Content Start -->
+    <section class="hero">
+      <img src="img/img-store/garmox.png" alt="Product 1" class="produk" />
+
+      <div class="content">
+        <h3>Garmox Cat Besi Chromax</h3>
+        <div class="rating">
+          <span
+            >Terjual 100+ <img src="img/icon/star-fill.svg" />5 (200
+            rating)</span
+          >
+        </div>
+
+        <div class="price">IDR 30K</div>
+
+        <div class="color">
+          <h4>Pilih Warna</h4>
+          <div class="color-name"></div>
+        </div>
+
+        <div class="detail">
+          <h4>Detail Produk</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+            laudantium earum, culpa molestias quis cupiditate cum voluptatum
+            quos, est facere totam error ipsum reiciendis asperiores.
+          </p>
+        </div>
+
+        <h4>Pengiriman</h4>
+        <div class="pengiriman">
+          <img src="img/icon/map-pin-black.svg" />
+          <span>dikirim dari <b>Kota Tasikmalaya</b></span>
+        </div>
+      </div>
+
+      <div class="keranjang">
+        <h4>Atur Jumlah dan Catatan</h4>
+        <div class="color"></div>
+
+        <div class="atur-jumlah">
+          <div class="jumlah">
+            <img src="img/icon/min.svg" />
+            <span>0</span>
+            <img src="img/icon/plus.svg" />
+          </div>
+          <div class="stok">Stok : <span>Sisa 0</span></div>
+        </div>
+
+        <div class="subtotal">Subtotal <span>IDR 30K</span></div>
+        <a href="#" class="cta-1">Add to Cart</a><br />
+        <a href="#" class="cta-2">Buy Now</a>
+      </div>
+    </section>
+    <!-- Content End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

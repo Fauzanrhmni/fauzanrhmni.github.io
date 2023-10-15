@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --c1: #f8b501;
+  --c2: #3a3f47;
+  --c3: #eaeaea;
+  --c4: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c4);
+  color: var(--c2);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  padding: 0.8rem 7%;
+  background-color: var(--c4);
+  /* border-bottom: 1px solid #f7f7f7; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-logo .logo {
+  height: 2rem;
+}
+
+.navbar .title {
+  display: inline-block;
+  color: var(--c2);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.navbar .title span {
+  color: var(--c1);
+}
+
+.navbar .pen-tool {
+  color: var(--c4);
+}
+
+/* Hero Section */
+.hero h2 {
+  color: var(--c2);
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: text;
+}
+
+.hero .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.8rem 7%;
+  cursor: default;
+}
+
+.hero .row .card {
+  width: 13rem;
+  height: 13.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+span.copy {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  font-size: 0.9rem;
+  width: 40%;
+  height: 12%;
+  border-radius: 0 0.5rem 0 0;
+  background: #00000025;
+  bottom: -50%;
+}
+
+span.copy:hover {
+  background: #00000050;
+}
+
+span.copy:active {
+  background: #00000075;
+}
+
+/* span.copy::before {
+  content: "Copied";
+  position: absolute;
+  display: none;
+}
+
+span.active .copy::before,
+span.active .copy::before {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+.row .card .color-1 {
+  height: 4.5rem;
+  /* background-color: #c2dedc; */
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.color-1:hover span.copy {
+  bottom: 9rem;
+}
+
+.row .card .color-2 {
+  height: 3.5rem;
+  /* background-color: #ece5c7; */
+}
+
+.color-2:hover span.copy {
+  bottom: 5.5rem;
+}
+
+.row .card .color-3 {
+  height: 3rem;
+  /* background-color: #cdc2ae; */
+}
+
+.color-3:hover span.copy {
+  bottom: 2.5rem;
+}
+
+.row .card .color-4 {
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 2.5rem;
+  /* background-color: #116a7b; */
+}
+
+.color-4:hover span.copy {
+  bottom: 0;
+}

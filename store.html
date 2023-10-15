@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.svg" />
+    <title>CStore</title>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/why.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Icon -->
+    <script
+      src="https://kit.fontawesome.com/f69b4f09d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Nabvar Start -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="img/icon-circle.svg" class="logo" />
+        <span class="title">Cstore</span>
+      </div>
+
+      <div class="cuy">
+        <div class="location">
+          <img src="img/icon/map-pin.svg" />
+          <span class="tasik">Tasikmalaya</span>
+          <img src="img/icon/chevron-down.svg" />
+        </div>
+        <input type="search" id="search-box" placeholder="Search..." />
+        <div class="search">
+          <img src="img/icon/search.svg" />
+          <span class="search-text">Search</span>
+        </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search" class="search"></i></a>
+        <a href="#" id="cart"
+          ><i data-feather="shopping-cart" class="cart"></i
+        ></a>
+        <div class="numb">0</div>
+        <a href="#" id="user"><i data-feather="user" class="user-icon"></i></a>
+      </div>
+
+      <!-- Search Form Start -->
+      <!-- <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div> -->
+      <!-- Search Form End -->
+    </nav>
+    <!-- Nabvar End -->
+
+    <!-- Contoh Start -->
+    <section id="contoh" class="contoh">
+      <h2>Chromax Paint Series</h2>
+      <div class="row">
+        <div class="card">
+          <a href="test.html"
+            ><img
+              src="img/img-store/vinimox.png"
+              alt="Cat Weemox"
+              class="contoh-card-img"
+          /></a>
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Vinimox</span>
+                <p>Cat Tembok Chromax Interior</p>
+              </div>
+              <div class="price">180K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/weemox.png"
+            alt="Cat Vinimox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Weemox</span>
+                <p>Cat Tembok Chromax Eksterior</p>
+              </div>
+              <div class="price">240K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/woodmox.png"
+            alt="Cat Woodmox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Woodmox</span>
+                <p>Cat Kayu Chromax</p>
+              </div>
+              <div class="price">70K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/garmox.png"
+            alt="Cat Garmox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Garmox</span>
+                <p>Cat Besi Chromax</p>
+              </div>
+              <div class="price">60K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/hymox.png"
+            alt="Cat Hymox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Hymox</span>
+                <p>Cat Keramik Chromax</p>
+              </div>
+              <div class="price">700K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/elusmox.png"
+            alt="Cat Elusmox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Elusmox</span>
+                <p>Cat Waterproof Chromax</p>
+              </div>
+              <div class="price">200K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/spacemox.png"
+            alt="Cat Spacemox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Spacemox</span>
+                <p>Cat Dasar Chromax</p>
+              </div>
+              <div class="price">112K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="img/img-store/skymox.png"
+            alt="Cat Skymox"
+            class="contoh-card-img"
+          />
+          <div class="content">
+            <div class="card-contoh">
+              <div class="details">
+                <span>Skymox</span>
+                <p>Cat Atap Chromax</p>
+              </div>
+              <div class="price">150K</div>
+            </div>
+            <div class="buttons">
+              <button>Buy Now</button>
+              <button class="cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contoh End -->
+
+    <!-- My Javascript -->
+    <script src="js/detail.js"></script>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

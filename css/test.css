@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --c1: #f8b501;
+  --c2: #3a3f47;
+  --c3: #9b9b9b;
+  --c4: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 7%;
+  background-color: #fff;
+  /* border-bottom: 1px solid #f7f7f7; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-logo .logo {
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar .navbar-logo .title {
+  color: #3a3f47;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* Navbar Cuy */
+.cuy {
+  display: flex;
+  align-items: center;
+  border: 2px solid #00000014;
+  border-radius: 5rem;
+  padding: 0.2rem;
+}
+
+.cuy .location {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-right: 2px solid #00000014;
+  cursor: pointer;
+}
+
+.cuy .location img,
+.cuy .search img {
+  height: 1rem;
+}
+
+.cuy .location .tasik {
+  margin: 0 0.4rem;
+  font-size: 0.9rem;
+  color: #b3b2bb;
+}
+
+.cuy input {
+  padding: 0.6rem 1rem;
+  width: 25rem;
+}
+
+.cuy input::placeholder {
+  color: #b3b2bb;
+}
+
+.cuy .search {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background-color: var(--c1);
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.cuy .search:hover {
+  background-color: #e3a700;
+}
+
+.cuy .search .search-text {
+  margin-left: 0.4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+#search {
+  display: none;
+}
+
+/* Navbar Extra */
+.navbar-extra a {
+  color: #3a3f47;
+}
+
+.navbar-extra .user-icon:hover,
+.navbar-extra .search:hover {
+  color: #f8b501;
+}
+
+.navbar-extra .cart:hover {
+  color: #f8b501;
+  fill: #f8b501;
+}
+
+.navbar .navbar-extra .numb {
+  position: absolute;
+  top: 0.7rem;
+  right: 8rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 16px;
+  height: 18px;
+  width: 18px;
+  color: #3a3f47;
+  background: #fff;
+  text-align: center;
+  border: 1.8px solid #3a3f47;
+  border-radius: 50%;
+}
+
+/* Content Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 7rem 7%;
+}
+
+.hero .produk {
+  width: 23rem;
+  height: 23rem;
+}
+
+.hero .content {
+  padding: 1rem;
+}
+
+.hero .content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero .content .rating {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.hero .content .rating span {
+  display: flex;
+  align-items: center;
+}
+
+.hero .content .rating img {
+  height: 18px;
+  width: 18px;
+  margin: 0 0.1rem 0 0.5rem;
+}
+
+.hero .content .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.hero .content .color,
+.hero .content .detail,
+.hero .content .pengiriman,
+.hero .content .pengiriman {
+  padding: 1rem 0;
+}
+
+.hero .content .color h4,
+.hero .content .detail h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.hero .content .color .color-name {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: var(--c2);
+}
+
+.hero .content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.hero .content .pengiriman {
+  display: flex;
+  align-items: center;
+}
+
+.hero .content .pengiriman img {
+  height: 18px;
+  width: 18px;
+  margin-right: 0.5rem;
+}
+
+.hero .content .pengiriman span {
+  font-size: 0.9rem;
+}
+
+.hero .keranjang {
+  padding: 1rem;
+  width: 35rem;
+  height: 100%;
+  border: 2px solid #00000014;
+  border-radius: 1rem;
+}
+
+.hero .keranjang h4 {
+  font-size: 1.1rem;
+}
+
+.hero .keranjang .atur-jumlah {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.hero .keranjang .atur-jumlah .jumlah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  border: 2px solid #00000014;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.hero .keranjang .atur-jumlah .jumlah img {
+  height: 1rem;
+}
+
+.hero .keranjang .atur-jumlah .jumlah span {
+  font-size: 0.9rem;
+  margin: 0rem 1.3rem;
+}
+
+.hero .keranjang .atur-jumlah .stok {
+  font-size: 0.9rem;
+}
+
+.hero .keranjang .subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.hero .keranjang .subtotal span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.hero .keranjang .cta-1 {
+  display: inline-block;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  margin: 0.3rem 0;
+  width: 100%;
+  background-color: var(--c1);
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--c4);
+}
+
+.hero .keranjang .cta-2 {
+  display: inline-block;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  margin: 0.3rem 0;
+  width: 100%;
+  border: 1px solid var(--c1);
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--c1);
+}
