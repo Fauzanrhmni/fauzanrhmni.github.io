@@ -140,41 +140,6 @@ body {
   border-radius: 50%;
 }
 
-/* Navbar Search Form */
-/* .navbar .search-form {
-  position: absolute;
-  top: 100%;
-  right: 7.3%;
-  width: 20rem;
-  height: 3rem;
-  background-color: #fff;
-  box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: 0.3s;
-  padding: 1rem;
-}
-
-.navbar .search-form.active {
-  transform: scaleY(1);
-}
-
-.navbar .search-form input {
-  height: 100%;
-  width: 100%;
-  font-size: 1rem;
-  color: #3a3f47;
-}
-
-.navbar .search-form label {
-  cursor: pointer;
-  font-size: 2rem;
-  margin-right: 0.5rem;
-} */
-
 /* Contoh Section */
 .contoh h2 {
   color: #3a3f47;

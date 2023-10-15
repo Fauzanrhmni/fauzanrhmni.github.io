@@ -66,9 +66,9 @@ body {
 /* Hero Section */
 .hero h2 {
   color: var(--c2);
-  margin-top: 6rem;
+  margin-top: 5rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   cursor: text;
 }
@@ -113,19 +113,6 @@ span.copy:hover {
 span.copy:active {
   background: #00000075;
 }
-
-/* span.copy::before {
-  content: "Copied";
-  position: absolute;
-  display: none;
-}
-
-span.active .copy::before,
-span.active .copy::before {
-  content: "";
-  position: absolute;
-  display: none;
-} */
 
 .row .card .color-1 {
   height: 4.5rem;
